@@ -2,7 +2,9 @@ import sounddevice as sd
 import numpy as np
 import soundfile as sf
 import matplotlib.pyplot as plt
+
 def main():
+    print(sd.query_devices())
     duration = 5
     fs = 44100
     device_index = 1
